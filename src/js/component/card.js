@@ -1,11 +1,13 @@
 import React, { Component } from "react";
+import "../../styles/home.css";
+
 
 export const Card = ({title}) => (
-	<div class="col-5 cardsize">
+	<div className="col-5 cardsize" id = "card">
 		<div>
 			<h3>{title ?
 			title:
-			"Name"}</h3>
+			"Error"}</h3>
 		</div>
 	</div>
 );

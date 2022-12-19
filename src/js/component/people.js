@@ -1,10 +1,15 @@
 import React, { Component, useContext, useEffect } from "react";
+import { Context } from "../store/appContext";
+import { Card } from "./card.js";
+import {getState} from "../store/flux.js";
 
-export const People = () => (
-	<footer className="footer mt-auto py-3 text-center">
-		<p>
-			Made with <i className="fa fa-heart text-danger" /> by{" "}
-			<a href="http://www.4geeksacademy.com">4Geeks Academy</a>
-		</p>
-	</footer>
-);
+export const People = () => {
+	
+	useEffect(() => {
+		actions.getChars()
+	}, [])
+
+	return(
+		
+	)
+};

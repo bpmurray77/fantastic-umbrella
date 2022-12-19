@@ -3,7 +3,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 	return {
 
 		store: {
-			people : []
+			people : [setStore]
 		},
 
 		actions: {
